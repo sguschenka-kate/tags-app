@@ -1,0 +1,47 @@
+{
+  "name": "tags-app",
+  "version": "1.0.0",
+  "description": "Node.js Rest Apis with Express, Sequelize & MySQL",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --poll src/index.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "pm2-runtime src/index.ts",
+    "migration:create": "npx sequelize migration:create --name",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "sequelize",
+    "mysql"
+  ],
+  "author": "bezkoder",
+  "license": "ISC",
+  "dependencies": {
+    "@awaitjs/express": "^0.9.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.2",
+    "pm2": "^5.3.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.31.0",
+    "sequelize-cli": "^6.6.0",
+    "sequelize-typescript": "^2.1.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.3",
+    "@types/validator": "^13.7.15",
+    "rimraf": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.4"
+  }
+}

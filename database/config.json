@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "root",
+    "password": "123456",
+    "database": "ponchik_db",
+    "host": "localhost",
+    "dialect": "mysql",
+    "port": 3307
+  }
+}
